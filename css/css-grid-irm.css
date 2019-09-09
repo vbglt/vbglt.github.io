@@ -210,7 +210,9 @@
 
 .title {
   justify-self: center;
-  padding: 20px 0px; }
+  padding: 20px 50px;
+  padding-left: 100px;
+  margin-left: 100px; }
 
 .wrapper {
   display: grid;
