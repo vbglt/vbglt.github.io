@@ -1,0 +1,19 @@
+.account-recon-wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	align-items: start;
+}
+
+.account-recon-wrapper .hamburger {
+	justify-self: end;
+	align-self: start;
+}
+
+.account-recon-wrapper .app-name-and-desc {
+	padding: 0px;
+}
+
+.account-recon-wrapper .chg-pwd-data {
+	border: 1px #e0e0e0;
+	border-style: none none solid none;
+}

@@ -1,0 +1,118 @@
+---
+broadpage: Administration
+specificpage: Account Reconciliation
+layout: default
+---
+
+<div class="account-recon-wrapper">
+	<div class="alert alert-dark" role="alert">
+		Account Reconciliation: The last account reconciliation was execute on April 29, 2019 5:40pm. <br>Following accounts could not be reconciled, and require manual intervention.
+	</div>
+	<div class="current-and-new-passwords">
+		<div class="chg-pwd-header">
+			<div>
+				Username and Application
+			</div>
+		</div>
+		<div class="chg-pwd-data">
+			<div class="app-name-and-desc">
+				<div class="app-name">adatar (RACF)</div>
+				<div class="app-desc">No NEIS user with correlation attribute email value 'amol.datar@idmworks.com'</div>				
+			</div>
+
+			<div class="hamburger">
+				<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <i class="material-icons">reorder</i>
+					  </button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModalScrollable">Assign User</a>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="chg-pwd-data">
+			<div class="app-name-and-desc">
+				<div class="app-name">amol.datar@idmworks.com (Active Directory)</div>
+				<div class="app-desc">More than one NEIS Users matched</div>				
+			</div>
+			<div class="hamburger">
+				<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <i class="material-icons">reorder</i>
+					  </button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModalScrollable">Assign User</a>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="chg-pwd-data">
+			<div class="app-name-and-desc">
+				<div class="app-name">amol (Novell eDirectory)</div>
+				<div class="app-desc">The value of account's correlation attribute 'email' is blank</div>				
+			</div>
+			<div class="hamburger">
+				<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <i class="material-icons">reorder</i>
+					  </button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModalScrollable">Assign User</a>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-scrollable" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalScrollableTitle">Select NEIS User</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+			<div class="card" style="">
+			  <ul class="list-group list-group-flush">
+			    <li class="list-group-item">Amol Datar</li>
+			    <li class="list-group-item">John Doe</li>
+			    <li class="list-group-item">David Lee</li>
+			    <li class="list-group-item">Nicholas Hunt</li>
+			    <li class="list-group-item">Mary White in</li>
+			    <li class="list-group-item">Sandy</li>
+			    <li class="list-group-item">Kelly Grizzle</li>
+			    <li class="list-group-item">Paul Trulove</li>
+			    <li class="list-group-item">Kate Winslet</li>
+			    <li class="list-group-item">Keanu Reeves</li>
+			    <li class="list-group-item">Jackie Gilbert</li>
+			    <li class="list-group-item">Ratnesh Dangi</li>
+			    <li class="list-group-item">Vikas Bansal</li>
+			    <li class="list-group-item">Nate Woolls</li>
+			    <li class="list-group-item">Akshay Ghatol</li>
+			    <li class="list-group-item">Yogesh Pansare</li>
+			    <li class="list-group-item">Nilesh Nikalje</li>
+			    <li class="list-group-item">Amit Shrivastava</li>
+			    <li class="list-group-item">Arjun Sharma</li>
+			    <li class="list-group-item">Scott Ford</li>
+			    <li class="list-group-item">Octavio Lopez</li>
+			  </ul>
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>	
+	<div class="submit-button">
+		<!-- Button trigger modal -->
+		<a class="btn btn-secondary btn-sm" href="chg-pwd-status-2.html" role="button">
+		  Refresh
+		</a>
+	</div>
+</div>

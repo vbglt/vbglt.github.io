@@ -1,0 +1,54 @@
+---
+broadpage: My Account
+specificpage: Change Password
+layout: default
+---
+
+<div class="change-password-wrapper">
+	<div class="alert alert-dark" role="alert">
+		Password Policy:
+		<ul>
+			<li>Minimum 8 characters</li>
+			<li>At least two non-alphanumeric characters</li>
+		</ul>
+	</div>
+	<div class="alert alert-dark" role="alert">
+		Changing password will change password for following applications:
+		<ul>
+			<li>RACF</li>
+			<li>Active Directory</li>
+		</ul>
+	</div>
+	<div class="current-and-new-passwords">
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				Current Password
+			</div>
+			<div class="change-password-input-box">
+				<input type="password" class="form-control" placeholder="Current Password">
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">New Password</label>
+			</div>
+			<div class="change-password-input-box">
+				<input type="password" class="form-control" placeholder="New Password">
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Confirm New Password</label>
+			</div>
+			<div class="change-password-input-box">
+				<input type="password" class="form-control" placeholder="Confirm New Password">
+			</div>
+		</div>
+	</div>
+	<div class="submit-button">
+		<!-- Button trigger modal -->
+		<a class="btn btn-secondary btn-sm" href="chg-pwd-status-1.html" role="button">
+		  Change Password
+		</a>
+	</div>
+</div>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IRM</title>
+    <link rel="stylesheet" type="text/css" href="css/css-grid-irm.css"></li>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-logo-cell">
+        <div class="header-logo">
+          <div><a href="/index.html"><img src="https://via.placeholder.com/175x16.png"></a></div>
+        </div>        
+      </div>
+      <div class="header-non-logo">
+        <div class="header-non-logo-navigation-bar">
+          <div><i class="material-icons">reorder</i></div>          
+        </div>
+        <div></div>
+        <div class="header-non-logo-logged-in-user-info">
+          <div><i class="material-icons">account_circle</i></div>     
+          <div class="loggedin-user-name"><span>{{ page.irmuser }}</span></div>     
+          <div><i class="material-icons">arrow_drop_down</i></div>     
+        </div>
+      </div>
+      <div class="sidebar-with-login-info">
+        <div class="login-info-sidebar">
+          <div class="login-info-sidebar-icon">
+            <div><i class="material-icons md-36">account_circle</i></div>           
+          </div>
+          <div class="login-info-sidebar-user-info">
+            <div class="login-info-sidebar-user-name"><span>{{ page.irmuser }}</span></div>
+            <div class="login-info-sidebar-user-group-info">
+              <div class="login-info-sidebar-user-group-info-icon"><i class="material-icons md-13">group</i></div>
+              <div class="login-info-sidebar-user-group-info-name">{{ page.irmrole }}</div>
+            </div>
+          </div>
+          <div class="login-info-sidebar-settings-icon">
+            <div><i class="material-icons md-16">settings</i></div>           
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">av_timer</i></div>
+            <div class="sidebar-item-text">Dashboard</div>
+          </div>
+          <div class="sidebar-item-label-cell">
+            <div class="sidebar-item-label">SOD</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">assignment_ind</i></div>
+            <div class="sidebar-item-text"><a href="user-master.html">User Master</a></div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">assignment</i></div>
+            <div class="sidebar-item-text"><a href="entitlement-function-list.html">Entitlements</a></div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">assignment_turned_in</i></div>
+            <div class="sidebar-item-text"><a href="functions-list.html">Functions</a></div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">assignment_late</i></div>
+            <div class="sidebar-item-text"><a href="risks.html">Risks</a></div>
+          </div>
+          <div class="sidebar-item-label-cell">
+            <div class="sidebar-item-label">REPORTS</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">poll</i></div>
+            <div class="sidebar-item-text"><a href="report-all-users-all-risks.html">All Users, All Risks</a></div>
+          </div>
+          <div class="sidebar-item-label-cell">
+            <div class="sidebar-item-label">ADMINISTRATION</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">apps</i></div>
+            <div class="sidebar-item-text"><a href="app-config.html">Applications</a></div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">swap_horiz</i></div>
+            <div class="sidebar-item-text"><a href="tasks.html">Tasks</a></div>
+          </div>
+          <!--
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">assignment_ind</i></div>
+            <div class="sidebar-item-text">Users Reconciliations</div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">group</i></div>
+            <div class="sidebar-item-text">Groups Reconciliation</div>
+          </div>
+          <div class="sidebar-item-with-badge">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">vertical_align_center</i></div>
+            <div class="sidebar-item-text">Account Reconciliation</div>
+            <div><span class="badge badge-pill badge-secondary">3</span></div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">history</i></div>
+            <div class="sidebar-item-text">Status</div>
+          </div>
+        -->
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">person_outline</i></div>
+            <div class="sidebar-item-text"><a href="irm-users.html">IRM Users</a></div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">people</i></div>
+            <div class="sidebar-item-text"><a href="irm-roles.html">IRM Roles</a></div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-item-icon"><i class="material-icons md-13">settings</i></div>
+            <div class="sidebar-item-text">Settings</div>
+          </div>
+        
+        </div>
+      </div>
+      <div class="content-with-pagename-footer">
+        <div class="pageinfo">
+          <div class="pageinfo-icon"><i class="material-icons md-18">lock</i></div>
+          <div class="pageinfo-broadpage">{{ page.broadpage }}</div>
+          <div class="pageinfo-separator">/</div>
+          <div class="pageinfo-specificpage">{{ page.specificpage }}</div>
+        </div>
+        <div class="content">
+          {{ content }}
+        </div>
+        <div class="footer">
+          <div class="footer-text">
+            <span>© 2019. Integrated Risk Management by Greenlight, Inc.</span>
+          </div>
+          <div class="footer-support-symbol">
+            <div><img src="https://via.placeholder.com/16.png"></div>            
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  </body>
+</html>

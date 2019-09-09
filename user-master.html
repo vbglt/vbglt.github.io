@@ -1,0 +1,76 @@
+---
+broadpage: SOD
+specificpage: Entitlements
+layout: default
+irmuser: John.Doe
+irmrole: Compliance Manager
+---
+
+<div class="entitlement-function-wrapper">
+	<div class="entitlements-search">
+		<div class="label-and-input-box">
+			<div>
+				Application
+			</div>
+			<div>
+				<select class="custom-select">
+				  <option selected>All</option>
+				  <option>SAP ECC</option>
+				  <option>Oracle EBS</option>
+				</select>				
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div>
+				Entitlement
+			</div>
+			<div>
+				<select class="custom-select">
+				  <option selected>All</option>
+				  <option>SAP Role</option>
+				  <option>SAP Profile</option>
+				  <option>Oracle EBS Role</option>
+				  <option>Oracle EBS Responsibility</option>
+				</select>				
+			</div>
+		</div>
+	</div>
+	<div class="entitlements-table">
+		<table class="table table-hover">
+		  <thead>
+		    <tr>
+		      <th scope="col">Identity</th>
+		      <th scope="col">Application</th>
+		      <th scope="col">Entitlement Type</th>
+		      <th scope="col">Entitlement Value</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>David Crow</td>
+		      <td>SAP ECC</td>
+		      <td>SAP Role</td>
+		      <td>Z:ACCOUNT</td>
+		    </tr>
+		    <tr>
+		      <td>Elvira Echvarria</td>
+		      <td>SAP ECC</td>
+		      <td>SAP Profile</td>
+		      <td>Z:Vendor</td>
+		    </tr>
+		    <tr>
+		      <td>Rick Weinberg</td>
+		      <td>Oracle EBS</td>
+		      <td>Responsibility</td>
+		      <td>Z:ACCOUNT</td>
+		    </tr>
+		    <tr>
+		      <td>Paul Trulove</td>
+		      <td>PeopleSoft</td>
+		      <td>Role</td>
+		      <td>Z:Invoice</td>
+		    </tr>
+		  </tbody>
+		</table>		
+	</div>
+</div>

@@ -1,0 +1,56 @@
+.account-obj-wrapper {
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+}
+
+.account-settings {
+	display: grid;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.account-settings .label-and-input-box {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	margin: 0px;
+}
+
+.drop-down {
+	padding-left: 20px;
+	padding-right: 260px;
+}
+
+.merge-checkbox-obj {
+	grid-column: 1 / span 2;
+  	grid-row: 1 / span 1;
+}
+
+.table-header {
+	font-weight: bold;
+	padding: 5px 0px;
+}
+
+.record {
+}
+
+.chk-box {
+	justify-self: center;
+	align-self: center;
+}
+
+.prev-next-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-bottom: 10px;
+}
+
+.next-button {
+	justify-self: end;
+	margin-right: 20px;
+}
+
+.prev-button {
+	justify-self: start;
+	margin-left: 20px;
+}
+

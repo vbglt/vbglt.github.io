@@ -1,0 +1,73 @@
+.tasks-wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	align-items: start;
+}
+
+.add-task-button {
+	justify-self: end;
+	margin-top: 20px;
+}
+
+.configured-tasks-table {
+	display: grid;
+	margin-top: 20px;
+	margin-right: 80px;
+	margin-left: 20px;
+	grid-column-gap: 20px;
+}
+
+.task {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr auto;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	justify-self: top;
+	margin-bottom: 10px;
+}
+
+.account-recon-logo {
+	padding: 5px;
+}
+
+.group-recon-logo {
+	padding: 5px;
+}
+
+.task-name-task-icon {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	padding: 5px;
+}
+
+.task-icon {
+	padding: 5px;
+}
+
+.task-name {
+	padding: 7px;
+}
+
+.app-logo-and-name {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	padding: 5px;	
+}
+
+.app-only-name {
+	padding: 7px;
+}
+
+.task-status {
+	padding-top: 5px;
+}
+
+.task-errors-warnings {
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.task-next-run {
+
+}

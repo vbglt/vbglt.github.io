@@ -1,0 +1,54 @@
+.app-config-wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	align-items: start;
+}
+
+.add-app-button {
+	justify-self: end;
+	margin-top: 20px;
+}
+
+.configured-apps-table {
+	display: grid;
+	margin-top: 20px;
+	margin-right: 80px;
+	margin-left: 20px;
+	grid-column-gap: 20px;
+}
+
+.app {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	justify-self: top;
+	margin-bottom: 10px;
+}
+
+.app-logo {
+	padding: 5px;
+}
+
+.app-name-and-desc {
+	display: grid;
+	padding-left: 20px;
+	grid-template-rows: auto 1fr;
+}
+
+.app-name {
+
+}
+
+.app-desc {
+	font-size: 0.8rem;
+}
+
+.hamburger {
+	align-self: center;
+	justify-self: center;
+	padding-right: 10px;
+}
+
+

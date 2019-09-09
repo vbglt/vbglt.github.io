@@ -1,0 +1,297 @@
+
+@import 'app-config';
+@import 'add-application';
+@import 'objects-to-manage';
+@import 'account-recon';
+@import 'tasks';
+@import 'entitlements-list';
+@import 'add-function';
+
+/*
+@import 'configure-account-obj';
+@import 'configure-entitlements';
+@import 'summary';
+@import 'pwd-mgmt';
+@import 'status';
+*/
+
+.index-page-wrapper {
+	padding: 0px 20px;
+	display: grid;
+}
+
+.title {
+	justify-self: center;
+	padding: 20px 0px;
+}
+
+.wrapper {
+	display: grid;
+    min-height:100vh;
+	grid-template-columns: [header-logo] 270px [header-non-logo] auto;
+	grid-template-rows: 50px auto;
+	grid-template-areas: 
+		"header-logo-cell header-non-logo"
+		"sidebar-with-login-info content-with-pagename-footer";
+	align-content: stretch;
+}
+
+.header-logo-cell {
+	display: grid;
+	grid-template-areas:
+		"header-logo";
+	border-width: 1px;
+	border-style: solid;
+}
+
+.header-logo {
+	grid-area: header-logo;
+	align-self: center;
+	justify-self: center;
+}
+
+.header-non-logo {
+	display: grid;
+	grid-area: header-non-logo;
+	border-width: 1px 1px 1px 0px;
+	border-style: solid;
+	padding: 0px 20px;
+	grid-template-columns: 48px auto 120px;
+}
+
+.header-non-logo-navigation-bar {
+	align-self: center;
+	justify-self: center;
+}
+
+.header-non-logo-logged-in-user-info {
+	display: grid;
+	grid-template-columns: 4fr 19fr 1fr;
+	align-items: center;
+}
+
+.loggedin-user-name {
+	height: 24px;
+	padding: 0px 4px;
+}
+
+.sidebar-with-login-info {
+	grid-area: sidebar-with-login-info;
+	display: grid;
+	grid-template-rows: 79px auto;
+	grid-template-areas:
+		"login-info-sidebar"
+		"sidebar";
+	border-width: 0px 1px 1px 1px;
+	border-style: solid;	
+}
+
+.login-info-sidebar {
+	display: grid;
+	grid-area: login-info-sidebar;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	padding: 20px;
+	grid-template-columns: 3fr 9fr 1fr;	
+}
+
+.login-info-sidebar-icon {
+
+}
+
+.login-info-sidebar-user-info {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.login-info-sidebar-user-name {
+	font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: .8125rem;
+	font-weight: 500;
+}
+
+.login-info-sidebar-user-group-info {
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+}
+
+.login-info-sidebar-user-group-info-icon {
+	align-self: center;
+}
+
+.login-info-sidebar-user-group-info-name {
+	font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 0.7rem;
+	font-weight: 500;
+	align-self: center;
+}
+
+.login-info-sidebar-settings-icon {
+	justify-self: center;
+	align-self: center;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;	
+}
+
+%sidebar-item {
+	display: grid;
+	grid-template-columns: 33px auto;
+	grid-template-rows: 44px;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	padding-left: 20px;
+}
+
+.sidebar-item {
+	@extend %sidebar-item;
+}
+
+.sidebar-item-with-badge {
+	@extend %sidebar-item;
+	grid-template-columns: 33px auto 1fr;
+}
+
+.sidebar-item-label-cell {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 44px;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	padding-left: 20px;
+	margin-top: 8px;
+}
+
+.sidebar-item-label {
+	align-self: center;
+	font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: .8125rem;
+	font-weight: 500;
+}
+
+.sidebar-item-icon {
+	padding-right: 20px;
+	align-self: center;
+}
+
+.sidebar-item-text {
+	align-self: center;
+	font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: .8125rem;
+	font-weight: 500;
+	padding-right: 2px;
+}
+
+
+.content-with-pagename-footer {
+	grid-area: content-with-pagename-footer;
+	display: grid;
+	grid-template-rows: 93px auto 48px;
+	grid-template-areas:
+		"pageinfo"
+		"content"
+		"footer";
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;	
+}
+
+.pageinfo {
+	display: grid;
+	grid-area: pageinfo;
+	border-width: 0px 0px 0px 0px;
+	border-style: solid;
+	padding: 32px 20px;
+	grid-template-columns: 1fr 4fr 1fr 25fr;
+	grid-template-areas:
+		"pageinfo-icon pageinfo-broadpage pageinfo-separator pageinfo-specificpage";
+}
+
+.pageinfo-icon {
+	grid-area: pageinfo-icon;
+	align-self: center;
+}
+
+.pageinfo-broadpage {
+	grid-area: pageinfo-broadpage;
+	font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1.1875rem;;
+	font-weight: 500;
+	align-self: center;
+}
+
+.pageinfo-separator {
+	grid-area: pageinfo-separator;
+	font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: .8125rem;
+	font-weight: 500;
+	align-self: center;
+	padding-left: 20px;
+}
+
+.pageinfo-specificpage {
+	grid-area: pageinfo-specificpage;
+	font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: .8125rem;
+	font-weight: 500;
+	align-self: center;
+	padding-left: 20px;
+}
+
+.content {
+	grid-area: content;
+	display: grid;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #e0e0e0;
+	border-radius: 3px;
+	padding: 20px;
+	margin: 0px 20px 44px 20px;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: auto 48px;
+	grid-area: footer;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+	padding: 0px 20px;
+}
+
+.footer-text {
+	align-self: center;
+}
+
+.footer-support-symbol {
+	align-self: center;
+	justify-self: right;
+}
+
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-13 { 
+	font-size: 13px; 
+	display: block;
+}
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { 
+	font-size: 18px; 
+	display: block;
+}
+.material-icons.md-24 { 
+	font-size: 24px; 
+}
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+
+.label-and-input-box {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	margin: 10px;
+}

@@ -1,0 +1,84 @@
+---
+broadpage: SOD
+specificpage: Add Function
+layout: default
+irmuser: John.Doe
+irmrole: Compliance Manager
+---
+
+<div class="entitlement-function-wrapper">
+	<div class="entitlements-search">
+		<div class="label-and-input-box">
+			<div>
+				Applications
+			</div>
+			<div>
+				<select class="selectpicker" multiple data-live-search="true">
+				  <option selected>SAP ECC</option>
+				  <option>Oracle EBS</option>
+				  <option>PeopleSoft</option>
+				</select>				
+			</div>
+		</div>
+	</div>
+	<div class="entitlements-table">
+		<table class="table table-hover">
+		  <thead>
+		    <tr>
+			  <th><input type="checkbox" value=""></th>
+		      <th scope="col">Permission(s)</th>
+		      <th scope="col">Application</th>
+		      <th scope="col">Entitlement</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+			  <td>
+				  <input type="checkbox" value="">
+			  </td>
+		      <td>
+			      <table>
+				      <tr>
+					      <td>READ: Z:BANK001</td>
+				      </tr>
+				      <tr>
+					      <td>READ: Z:BANK001</td>
+				      </tr>			      	
+			      </table>
+			  </td>
+		      <td>SAP ECC</td>
+		      <td>Z:Account</td>
+		    </tr>
+		    <tr>
+			  <td>
+				  <input type="checkbox" value="">
+			  </td>
+		      <td>Update: Z:Albertsons</td>
+		      <td>SAP ECC</td>
+		      <td>Z:Vendor</td>
+		    </tr>
+		    <tr>
+			  <td>
+				  <input type="checkbox" value="">
+			  </td>
+		      <td>READ: Z:BANK001</td>
+		      <td>Oracle EBS</td>
+		      <td>Z:ACCOUNT</td>
+		    </tr>
+		    <tr>
+			  <td>
+				  <input type="checkbox" value="">
+			  </td>
+		      <td>CREATE: Z:INVOICE</td>
+		      <td>PeopleSoft</td>
+		      <td>Z:Invoice</td>
+		    </tr>
+		  </tbody>
+		</table>		
+	</div>
+	<div class="add-app-button">
+		<a class="btn btn-secondary btn-sm" href="new-function.html" role="button">
+		  Next >>
+		</a>
+	</div>	
+</div>

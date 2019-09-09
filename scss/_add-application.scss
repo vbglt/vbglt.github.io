@@ -1,0 +1,46 @@
+.add-app-wrapper {
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
+
+.prev-next-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-bottom: 10px;
+}
+
+.next-button {
+	justify-self: end;
+	margin-right: 20px;
+}
+
+.prev-button {
+	justify-self: start;
+	margin-left: 20px;
+}
+
+%confirm {
+	display: grid;
+	justify-content: stretch;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border: 1px solid #ced4da;
+	border-radius: 2px;
+	padding: 10px;
+}
+
+.manage-password {
+	@extend %confirm;
+	grid-template-columns: 1fr;
+}
+
+.host-port-info {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr;
+	justify-content: stretch;	
+}
+
+.label-right {
+	justify-self: end;
+	padding-right: 10px;
+}
