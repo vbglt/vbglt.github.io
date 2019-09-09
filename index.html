@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="index-page-wrapper">
-      <div class="title"><h1>NEIS Use Cases</h1></div>
+      <div class="title"><h1>IRM Use Cases</h1></div>
       <div class="card">
         <div class="card-header">
-          <h4>Change Password</h4>
+          <h4>All Users, All Risks Report</h4>
         </div>
         <div class="card-body">
           <p class="card-text">Click below for Change Password use case.</p>
@@ -25,28 +25,43 @@
         </div>
         <div class="card-body">
           <ol>
-            <li class="card-text">Click on the button below</li>
+            <li class="card-text">Click on the button below. This will take you to Administration / Application screen.</li>
             <li class="card-text">Click on '+Add Application'</li>
           </ol>
-          <a href="/app-config.html" class="btn btn-primary">Click Here</a>
+          <a href="/app-config.html" class="btn btn-primary">Application Management</a>
         </div>
       </div>
       <div class="card">
         <div class="card-header">
-          <h4>Account Reconciliation</h4>
+          <h4>Tasks</h4>
         </div>
         <div class="card-body">
-          <p class="card-text">Click below.</p>
-          <a href="/account-recon.html" class="btn btn-primary">Click Here</a>
+          <p class="card-text">Tasks bring in the data from target system to IRM. Tasks are configured for the Applications. Two types of tasks are possible:</p>
+          <ul class="list-group">
+            <li class="list-group-item">Account Aggregation</li>
+            <li class="list-group-item">Entitlements Aggregation</li>
+          </ul>
+          <a href="/tasks.html" class="btn btn-primary">Tasks</a>
         </div>
       </div>
       <div class="card">
         <div class="card-header">
-          <h4>Status</h4>
+          <h4>SOD</h4>
         </div>
         <div class="card-body">
-          <p class="card-text">Click below.</p>
-          <a href="/request-status.html" class="btn btn-primary">Click Here</a>
+          <p class="card-text">SOD Task is used to compute the SOD rules and identity any users with risky access. After the SOD task executes successfully the All Users, All Risks report can be viewed.</p>
+          <a href="/tasks.html" class="btn btn-primary">Tasks</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h4>IRM Users and Group Managment</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">IRM Users are the users who will be accessing IRM. These are administrators, business managers, auditors. Note - these users are disctinct from the Identities / User Master. IRM Roles are the roles defined in IRM which a IRM user may have.</p>
+          <p class="card-text">To manage IRM Users and IRM Roles click on respective button below</p>
+          <a href="/irm-users.html" class="btn btn-primary">IRM Users</a>
+          <a href="/irm-roles.html" class="btn btn-primary">IRM Roles</a>
         </div>
       </div>
     </div>
