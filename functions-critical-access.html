@@ -1,0 +1,93 @@
+---
+broadpage: SOD
+specificpage: Critical Access
+layout: default
+irmuser: John.Doe
+irmrole: Compliance Manager
+---
+
+<div class="entitlement-function-wrapper">
+	<div class="add-app-button">
+		<!-- Button trigger modal -->
+		<a class="btn btn-secondary btn-sm" href="critical-access.html" role="button">
+		  + Add to Critical Access List
+		</a>
+	</div>
+
+	<div class="entitlements-table">
+		<table class="table table-hover">
+		  <thead>
+		    <tr>
+			  <th><input type="checkbox" value=""></th>
+		      <th scope="col">Function</th>
+		      <th scope="col">Permission(s)</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+			  <td>
+				  <input type="checkbox" value="">
+			  </td>
+		      <td>
+				<div class="func-name-and-desc">
+					<div class="app-name">Create Vendor</div>
+					<div class="app-desc">Ability to Create Vendor</div>				
+				</div>
+   			  </td>
+   			  <td>
+			      <table>
+				      <tr>
+					      <td>AuthObj:Vendor</td>
+				      </tr>
+				      <tr>
+					      <td>TCode:FK01</td>
+				      </tr>			      	
+			      </table>
+			  </td>
+		    </tr>
+		    <tr>
+			  <td>
+				  <input type="checkbox" value="">
+			  </td>
+		      <td>
+				<div class="func-name-and-desc">
+					<div class="app-name">Pay Vendor</div>
+					<div class="app-desc">Ability to pay vendor</div>				
+				</div>
+   			  </td>
+   			  <td>
+			      <table>
+				      <tr>
+					      <td>AuthObj:Vendor</td>
+				      </tr>
+				      <tr>
+					      <td>TCode:FB60</td>
+				      </tr>			      	
+			      </table>
+			  </td>
+		    </tr>
+		    <tr>
+			  <td>
+				  <input type="checkbox" value="">
+			  </td>
+		      <td>
+				<div class="func-name-and-desc">
+					<div class="app-name">Change Bank Account of a Vendor</div>
+					<div class="app-desc">Ability to update the bank account of a vendor master</div>				
+				</div>
+   			  </td>
+   			  <td>
+			      <table>
+				      <tr>
+					      <td>AuthObj:BankAccount</td>
+				      </tr>
+				      <tr>
+					      <td>TCode:XK02</td>
+				      </tr>			      	
+			      </table>
+			  </td>		      
+		    </tr>
+		  </tbody>
+		</table>		
+	</div>
+</div>

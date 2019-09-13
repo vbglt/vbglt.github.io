@@ -9,7 +9,19 @@ irmrole: IRM Administrator
 <div class="entitlements-wrapper">
 	<div class="entitlement-settings">
 		<div class="heading-entitlement-settings">
-			<h5>Settings for lookup 'Group'</h5>
+			<h5>Settings for IRM Entitlement 'SAP Role'</h5>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Unique Identifier</label>
+			</div>
+			<div class="drop-down">
+				<select class="custom-select custom-select-sm">
+				  <option selected>RoleID</option>
+				  <option>Entitlement</option>
+				  <option>Lookup</option>
+				</select>
+			</div>
 		</div>		
 		<div class="label-and-input-box">
 			<div class="change-password-info-banner">
@@ -25,23 +37,11 @@ irmrole: IRM Administrator
 		</div>		
 		<div class="label-and-input-box">
 			<div class="change-password-info-banner">
-				<label for="exampleInputEmail1">Key Attribute for DN</label>
-			</div>
-			<div class="drop-down">
-				<select class="custom-select custom-select-sm">
-				  <option selected>cn</option>
-				  <option>Entitlement</option>
-				  <option>Lookup</option>
-				</select>
-			</div>
-		</div>		
-		<div class="label-and-input-box">
-			<div class="change-password-info-banner">
 				<label for="exampleInputEmail1">Entitlement Display Name</label>
 			</div>
 			<div class="drop-down">
 				<select class="custom-select custom-select-sm">
-				  <option selected>Name</option>
+				  <option selected>Display Name</option>
 				  <option>Entitlement</option>
 				  <option>Lookup</option>
 				</select>
@@ -53,7 +53,7 @@ irmrole: IRM Administrator
 			</div>
 			<div class="drop-down">
 				<select class="custom-select custom-select-sm">
-				  <option selected>Name</option>
+				  <option selected>Description</option>
 				  <option>Entitlement</option>
 				  <option>Lookup</option>
 				</select>
@@ -63,7 +63,19 @@ irmrole: IRM Administrator
 
 	<div class="entitlement-settings">
 		<div class="heading-entitlement-settings">
-			<h5>Settings for lookup 'Computers'</h5>
+			<h5>Settings for IRM Entitlement 'SAP Profile'</h5>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Unique Identifier</label>
+			</div>
+			<div class="drop-down">
+				<select class="custom-select custom-select-sm">
+				  <option selected>ProfileID</option>
+				  <option>Entitlement</option>
+				  <option>Lookup</option>
+				</select>
+			</div>
 		</div>		
 		<div class="label-and-input-box">
 			<div class="change-password-info-banner">
@@ -79,23 +91,11 @@ irmrole: IRM Administrator
 		</div>		
 		<div class="label-and-input-box">
 			<div class="change-password-info-banner">
-				<label for="exampleInputEmail1">Key Attribute for DN</label>
-			</div>
-			<div class="drop-down">
-				<select class="custom-select custom-select-sm">
-				  <option selected>cn</option>
-				  <option>Entitlement</option>
-				  <option>Lookup</option>
-				</select>
-			</div>
-		</div>		
-		<div class="label-and-input-box">
-			<div class="change-password-info-banner">
 				<label for="exampleInputEmail1">Entitlement Display Name</label>
 			</div>
 			<div class="drop-down">
 				<select class="custom-select custom-select-sm">
-				  <option selected>Name</option>
+				  <option selected>Display Name</option>
 				  <option>Entitlement</option>
 				  <option>Lookup</option>
 				</select>
@@ -107,13 +107,14 @@ irmrole: IRM Administrator
 			</div>
 			<div class="drop-down">
 				<select class="custom-select custom-select-sm">
-				  <option selected>Name</option>
+				  <option selected>Description</option>
 				  <option>Entitlement</option>
 				  <option>Lookup</option>
 				</select>
 			</div>
 		</div>
 	</div>
+	<!--
 	<div class="entitlement-settings">
 		<div class="heading-entitlement-settings">
 			<h5>Settings for lookup 'Organizational Unit'</h5>
@@ -167,14 +168,15 @@ irmrole: IRM Administrator
 			</div>
 		</div>
 	</div>
+-->
 	<div class="prev-next-buttons">
 		<div class="prev-button">
-			<a class="btn btn-secondary btn-sm" href="configure-account-obj.html" role="button">
+			<a class="btn btn-secondary btn-sm" href="configure-account-obj-sap.html" role="button">
 			  << Back
 			</a>
 		</div>
 		<div class="next-button">
-			<a class="btn btn-secondary btn-sm" href="summary.html" role="button">
+			<a class="btn btn-secondary btn-sm" href="summary-sap.html" role="button">
 			  Next >>
 			</a>
 		</div>
