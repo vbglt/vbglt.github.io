@@ -4,80 +4,51 @@ specificpage: Entitlements
 layout: default
 irmuser: John.Doe
 irmrole: Compliance Manager
+icon: assignment
+heading: Entitlements
 ---
-
-<div class="entitlement-function-wrapper">
-	<div class="entitlements-search">
-		<div class="label-and-input-box">
-			<div>
-				Application
-			</div>
-			<div>
-				<select class="custom-select">
-				  <option selected>SAP ECC</option>
-				  <option>Oracle EBS</option>
-				</select>				
-			</div>
-		</div>
-		<div class="label-and-input-box">
-			<div>
-				Entitlement
-			</div>
-			<div>
-				<select class="custom-select">
-				  <option>SAP Role</option>
-				  <option selected>SAP Profile</option>
-				  <option>Oracle EBS Role</option>
-				  <option>Oracle EBS Responsibility</option>
-				</select>				
-			</div>
+<div class="d-flex flex-column">
+	<div class="d-flex" style="margin-bottom: 20px">
+		<a class="btn btn-sm btn-outline-secondary" role="button"  data-toggle="modal" data-target="#syncTask">
+		  Export Entitlements
+		</a>
+	</div>
+	<div class="d-flex irm-border" style="background-color: #f2f3f2; margin: -1px -1px -1px -1px">
+		<div class="d-flex irm-border" style="border-radius: 20px; margin: 10px;background-color: white;">
+			<div class="task-logo material-icons md-24 align-self-end">search</div>
+			<input type="text" class="border-0 mr-5" placeholder="Search...">			
 		</div>
 	</div>
-	<div class="entitlements-table">
-		<table class="table table-hover">
-		  <thead>
-		    <tr>
-		      <th scope="col">Application</th>
-		      <th scope="col">Entitlement Type</th>
-		      <th scope="col">Entitlement Value</th>
-		      <th scope="col">Permission(s)</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		    <tr>
-		      <td>SAP ECC</td>
-		      <td>SAP Role</td>
-		      <td>Z:ACCOUNT</td>
-		      <td>
-			      <table>
-				      <tr>
-					      <td>READ: Z:BANK001</td>
-				      </tr>
-				      <tr>
-					      <td>READ: Z:BANK001</td>
-				      </tr>			      	
-			      </table>
-			  </td>
-		    </tr>
-		    <tr>
-		      <td>SAP ECC</td>
-		      <td>SAP Profile</td>
-		      <td>Z:Vendor</td>
-		      <td>Update: Z:Albertsons</td>
-		    </tr>
-		    <tr>
-		      <td>Oracle EBS</td>
-		      <td>Responsibility</td>
-		      <td>Z:ACCOUNT</td>
-		      <td>READ: Z:BANK001</td>
-		    </tr>
-		    <tr>
-		      <td>PeopleSoft</td>
-		      <td>Role</td>
-		      <td>Z:Invoice</td>
-		      <td>CREATE: Z:INVOICE</td>
-		    </tr>
-		  </tbody>
-		</table>		
+	<div class="d-flex" style="border: 1px solid #dddddd; margin: 0px -1px -1px -1px">
+		<div class="d-flex flex-column col-3 px-0" style="height: 600px;;background-color: #f2f3f2;">
+			<div class="d-flex users-side-bar-link irm-border" style="height: 75px; margin: -1px">
+				<div class="col-10"><a href="#">All</a></div>
+				<div class="col-2">9857</div>
+			</div>
+			<div class="d-flex flex-column irm-border" style="height: 150px; margin: 0px -1px -1px -1px">
+				<div class="users-side-bar-heading">Applications</div>
+				<div class="d-flex users-side-bar-link">
+					<div class="col-10"><a href="#">SAP ECC</a></div>
+					<div class="col-2">87</div>					
+				</div>
+				<div class="d-flex users-side-bar-link">
+					<div class="col-10"><a href="#">Oracle EBS</a></div>
+					<div class="col-2">54</div>					
+				</div>
+			</div>
+		</div>
+		<div class="d-flex flex-column col-9 px-0">
+			<div class="d-flex" style="border: 1px solid #dddddd; height: 50px;background-color: #f2f3f2; margin: -1px -1px 0px 0px">
+				<div class="col-4 irm-header">Application</div>
+				<div class="col-8 irm-header irm-border-left">Entitlement Type and Value</div>
+			</div>
+			{% for entitlement in site.data.entitlements %}
+			<div class="d-flex irm-border-bottom">
+				<div class="col-4 irm-data">{{ entitlement.application }}</div>
+				<div class="col-4 irm-data">{{ entitlement.type }}</div>
+				<div class="col-4 irm-data">{{ entitlement.value }}</div>
+			</div>
+			{% endfor %}			
+		</div>
 	</div>
 </div>

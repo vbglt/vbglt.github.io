@@ -1,0 +1,5 @@
+application,type,value
+SAP ECC,SAP Role,Z:ACCOUNT
+SAP ECC,SAP Profile,Z:Vendor
+Oracle EBS,Responsibility,Z:ACCOUNT
+PeopleSoft,Role,Z:Invoice
