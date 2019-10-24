@@ -1,0 +1,62 @@
+.user-details-wrapper {
+	display: grid;
+	grid-template-rows: auto auto auto auto 1fr;
+}
+
+.user-profile {
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+.user-icon {
+	margin-right: 10px;
+}
+
+.user-name-status-logs {
+	display: grid;
+	grid-template-rows: auto auto;
+}
+
+.user-status-logs {
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+.user-status {
+
+}
+
+.user-logs {
+	justify-content: flex-end;
+	font-size: 10px;	
+}
+
+.tabs {
+	display: grid;
+	grid-template-columns: auto auto auto 1fr;
+	margin-top: 10px;
+	border-color: black;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	padding-bottom: 5px;
+}
+
+.tab {
+	margin-left: 35px;
+	font-size: 14px;
+}
+
+.tab-selected {
+	font-weight: bold;
+}
+
+.tab-name {
+	padding-top: 10px;
+	margin: 10px 0px;
+}
+
+.tab-details {
+	display: grid;
+	padding: 10px;
+	margin: 0px 0px 44px 0px;
+}

@@ -5,8 +5,10 @@
 }
 
 .add-task-button {
-	justify-self: end;
+	justify-self: start;
 	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
 
 .configured-tasks-table {
@@ -24,7 +26,13 @@
 	border-color: black;
 	border-style: solid;
 	justify-self: top;
-	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.task-border {
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
 }
 
 .account-recon-logo {
@@ -68,6 +76,81 @@
 	padding-top: 10px;
 }
 
+.task-summary {
+	display: grid;
+	margin-left: 30px;
+}
+
+.task-summary-item {
+	display: grid;
+}
+
 .task-next-run {
 
+}
+
+.task-details {
+	padding-top: -1.25rem;	
+}
+
+.users-side-bar-heading {
+    margin: 0;
+    padding: 15px 10px;
+    border-bottom: 1px solid #f2f2f2;
+    color: #5e5e5e;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 15px;
+    text-transform: uppercase;	
+}
+
+.users-side-bar-link {
+	display: block;
+    position: relative;
+    padding: 7px 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 13px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;	
+}
+
+.irm-header {
+	padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.irm-header-parent {
+	padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.irm-data {
+	color: #5e5e5e;
+    font-family: proxima-nova,Arial,Helvetica,sans-serif;
+    font-size: 13px;
+}
+
+.irm-border-left {
+	border-left: 1px solid #dddddd;
+}
+
+.irm-border-bottom {
+	border-bottom: 1px solid #dddddd;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.irm-border {
+	border: 1px solid #dddddd;
+	margin: 0px -1px;
 }

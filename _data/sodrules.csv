@@ -1,0 +1,5 @@
+name,businessprocess,function1,f1bp,permissions1,function2,f2bp,permissions2,function3,f3bp,permissions3
+Account Payable and Account Receivable,Finance,Accounts Payable,Finance,P1 AND P2 AND P3,Accounts Receivable,Sales,P1 AND P2 AND P3,Change Vendor Masters,Finance,P1 AND P2 AND P3
+Create and Pay Same Vendor,Procure to Pay,Create Vendor,Purchase,P1 AND P2 AND P3,Pay Vendor,Invoice,P1 AND P2 AND P3
+Change Vendor Master Details and Pay,Sales,Change Vendor Master,Finance,P1 AND P2 AND P3,Accounts Payable,Finance,P1 AND P2 AND P3,Accounts Receivable,Sales,P1 AND P2 AND P3
+Create and Pay Invoice,Vendor Management,Create Invoice,Vendor Management,P1 AND P2 AND P3,Pay Invoice,Finance,P1 AND P2 AND P3

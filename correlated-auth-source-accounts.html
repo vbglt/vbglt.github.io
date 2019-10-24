@@ -1,0 +1,64 @@
+---
+broadpage: Administration
+specificpage: Tasks
+layout: default
+irmuser: admin
+irmrole: IRM Administrator
+icon: assignment_ind
+heading: Authoritative Source Sync Report
+---
+<div class="d-flex flex-column">
+	<div class="d-flex irm-border" style="background-color: #f2f3f2; margin: -1px -1px -1px -1px">
+		<div class="d-flex irm-border" style="border-radius: 20px; margin: 10px;background-color: white;">
+			<div class="task-logo material-icons md-24 align-self-end">search</div>
+			<input type="text" class="border-0 mr-5" placeholder="Search...">			
+		</div>
+	</div>
+	<div class="d-flex" style="border: 1px solid #dddddd; margin: 0px -1px -1px -1px">
+		<div class="d-flex flex-column col-3 px-0" style="height: 600px;;background-color: #f2f3f2;">
+			<div class="d-flex users-side-bar-link irm-border" style="height: 75px; margin: -1px">
+				<div class="col-10"><a href="#">All</a></div>
+				<div class="col-2">9857</div>
+			</div>
+			<div class="d-flex flex-column irm-border" style="height: 150px; margin: 0px -1px -1px -1px">
+				<div class="users-side-bar-heading">Uncorrelated</div>
+				<div class="d-flex users-side-bar-link">
+					<div class="col-10"><a href="uncorrelated-auth-source-accounts.html">Accounts</a></div>
+					<div class="col-2">87</div>					
+				</div>
+			</div>
+			<div class="d-flex flex-column irm-border" style="height: 375px; margin: 0px -1px -1px -1px">
+				<div class="users-side-bar-heading">Correlated Accounts</div>
+				<div class="d-flex users-side-bar-link">
+					<div class="col-10"><a href="#">New</a></div>
+					<div class="col-2">12</div>					
+				</div>
+				<div class="d-flex users-side-bar-link">
+					<div class="col-10"><a href="#">Updated</a></div>
+					<div class="col-2">05</div>					
+				</div>
+				<div class="d-flex users-side-bar-link">
+					<div class="col-10"><a href="#">Deleted</a></div>
+					<div class="col-2">05</div>					
+				</div>
+			</div>
+		</div>
+		<div class="d-flex flex-column col-9 px-0">
+			<div class="d-flex" style="border: 1px solid #dddddd; height: 50px;background-color: #f2f3f2; margin: -1px -1px 0px 0px">
+				<div class="col-4 irm-header">Account & Application</div>
+				<div class="col-4 irm-header irm-border-left">User</div>
+				<div class="col-4 irm-header irm-border-left">Manager</div>
+			</div>
+			{% for account in site.data.auth-accounts %}
+			<div class="d-flex irm-border-bottom">
+				<div class="col-4 d-flex flex-column">
+					<div class="irm-data">{{ account.accountid }}</div>
+					<div class="irm-data">{{ account.application }}</div>
+				</div>
+				<div class="col-4 irm-data">{{ account.user }}</div>
+				<div class="col-4 irm-data">{{ account.manager }}</div>
+			</div>
+			{% endfor %}			
+		</div>
+	</div>
+</div>
