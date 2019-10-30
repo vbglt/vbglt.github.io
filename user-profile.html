@@ -1,0 +1,46 @@
+---
+broadpage: SOD
+specificpage: Entitlements
+layout: user-details-default
+irmuser: John.Doe
+irmrole: Compliance Manager
+heading: David Crow
+---
+<div class="d-flex flex-column">
+	<div class="heading">
+		<div>
+		  <img class="material-icons md-32 c5e5e5e" src="profile-pic.png"></img>
+		</div>
+		<div class="heading-title d-flex flex-column">
+		  <div>
+		    <h4>
+		      David Crow
+		    </h4>            
+		  </div>
+		  <div>Active</div>
+		</div>        
+	</div>
+
+	<div class="d-flex col-3 justify-content-between">
+		<div class="px-2"><a href="user-details.html">Applications</a></div>
+		<div class="px-2"><a href="#">Groups</a></div>
+		<div class="mb-3 pb-1 px-2" style="border-bottom: 3px solid #dddddd;"><a href="user-profile.html">Profile</a></div>
+	</div>
+	<div class="d-flex flex-column col-12 px-0" style="border: 1px solid #dddddd; margin: 0px -1px -1px -1px">
+		<div class="d-flex irm-border py-2 justify-content-between" style="background-color: #f2f3f2; margin: -1px -1px -1px -1px">
+			<div class="px-2 align-middle"><h5>Attributes</h5></div>
+			<div><button type="button" class="btn btn-light mr-3 btn-sm btn-outline-dark">Edit</button></div>
+		</div>
+		<div class="d-flex flex-column">
+			{% for attribute in site.data.attributes%}
+			<div class="d-flex mb-3">
+				<div class="d-flex flex-column col-4">
+					<div class="irm-data">{{ attribute.displayName}}</div>
+					<div class="irm-data">{{ attribute.id}}</div>
+				</div>
+				<div class="irm-data">{{ attribute.value}}</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

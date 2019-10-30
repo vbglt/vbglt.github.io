@@ -1,0 +1,61 @@
+---
+broadpage: SOD
+specificpage: Entitlements
+layout: user-details-default
+irmuser: John.Doe
+irmrole: Compliance Manager
+heading: David Crow
+---
+<div class="d-flex flex-column">
+	<div class="heading">
+		<div>
+		  <img class="material-icons md-32 c5e5e5e" src="profile-pic.png"></img>
+		</div>
+		<div class="heading-title d-flex flex-column">
+		  <div>
+		    <h4>
+		      David Crow
+		    </h4>            
+		  </div>
+		  <div>Active</div>
+		</div>        
+	</div>
+
+	<div class="d-flex col-3 justify-content-between">
+		<div class="mb-3 pb-1 px-2" style="border-bottom: 3px solid #dddddd;"><a href="user-details.html">Applications</a></div>
+		<div class="px-2"><a href="#">Groups</a></div>
+		<div class="px-2"><a href="user-profile.html">Profile</a></div>
+	</div>
+	<div>
+		<h5>Assigned Applications</h5>
+	</div>
+	<div class="d-flex flex-column col-12 px-0" style="border: 1px solid #dddddd; margin: 0px -1px -1px -1px">
+		<div class="d-flex irm-border" style="background-color: #f2f3f2; margin: -1px -1px -1px -1px">
+			<div class="d-flex irm-border align-self-end" style="border-radius: 20px; margin: 10px;background-color: white;">
+				<div class="task-logo material-icons md-24 align-self-end">search</div>
+				<input type="text" class="border-0 mr-5" placeholder="Search...">			
+			</div>
+		</div>
+		<div class="d-flex" style="border: 1px solid #dddddd; height: 50px;background-color: #f2f3f2; margin: -1px -1px 0px -1px">
+			<div class="col-4 irm-header">Application & App Username</div>
+			<div class="col-8 irm-header irm-border-left">Entitlements</div>
+		</div>
+		{% for account in site.data.accounts %}
+		<div class="d-flex irm-border-bottom pb-2">
+			<div class="col-4 d-flex flex-column">
+				<div class="irm-data">{{ account.application }}</div>
+				<div class="irm-data">{{ account.accountid }}</div>
+			</div>
+			<div class="col-8 d-flex flex-column">
+				<div class="irm-data">{{ account.entitlement1 }}</div>
+				{% if account.entitlement2 %}
+				<div class="irm-data">{{ account.entitlement2 }}</div>
+				{% endif %}
+				{% if account.entitlement3 %}
+				<div class="irm-data">{{ account.entitlement3 }}</div>
+				{% endif %}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,32 @@
+displayName,id,value
+Username, login, david.crow@greenlightcorp.com
+First Name,firstName,David
+Last Name, lastName, Crow
+Middle name, middleName,
+Honorific prefix, honorificPrefix,
+Honorific suffix, honorificSuffix,
+Primary email,email,david.crow@greenlightcorp.com
+Title,title
+Display name,displayName
+Nickname,nickName
+Profile Url,profileUrl
+Secondary email,secondEmail
+Mobile phone,mobilePhone
+Primary phone,primaryPhone
+Street address,streetAddress
+City,city
+State,state
+Zip code,zipCode
+Country code, countryCode
+Postal Address, postalAddress
+Preferred language, preferredLanguage
+Locale, locale
+Time zone, timezone
+User type, userType
+Employee number, employeeNumber
+Cost center, costCenter
+Organization, organization
+Division, division
+Department, department
+ManagerId, managerId
+Manager, manager

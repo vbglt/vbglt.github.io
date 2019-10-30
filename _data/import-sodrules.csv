@@ -1,0 +1,5 @@
+name,risklevel,businessprocess,function1,f1bp,f1p1,f1p2,f1p3,f1p4,f1p5,function2,f2bp,f2p1,f2p2,f2p3,f2p4,f2p5,function3,f3bp,f3p1,f3p2,f3p3,f3p4,f3p5
+Account Payable and Account Receivable,High,Finance,Accounts Payable,Finance,P1,P2,P3,P4,P5,Accounts Receivable,Sales,P1,P2,P3,P4,P5,Change Vendor Master,Finance,P1,P2,P3,P4,P5
+Create and Pay Same Vendor,Medium,Procure to Pay,Create Vendor,Purchase,P1,P2,P3,P4,P5,Pay Vendor,Invoice,P1,P2,P3,P4,P5
+Change Vendor Master Details and Pay,Low,Sales,Change Vendor Master,Finance,P1,P2,P3,P4,P5,Accounts Payable,Finance,P1,P2,P3,P4,P5,Accounts Receivable,Sales,P1,P2,P3,P4,P5
+Create and Pay Invoice,High,Vendor Management,Create Invoice,Vendor Management,P1,P2,P3,P4,P5,Pay Invoice,Finance,P1,P2,P3,P4,P5
