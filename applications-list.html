@@ -1,0 +1,28 @@
+---
+broadpage: SOD
+specificpage: Entitlements
+layout: default
+irmuser: John.Doe
+irmrole: Compliance Manager
+icon: assignment_ind
+heading: Applications
+---
+<div class="d-flex flex-column col-12 px-0" style="border: 1px solid #dddddd; margin: 0px -1px -1px -1px">
+	<div class="d-flex irm-border py-2 justify-content-between" style="background-color: #f2f3f2; margin: -1px -1px -1px -1px">
+		<div class="d-flex irm-border align-self-end" style="border-radius: 20px; margin: 10px;background-color: white;">
+			<div class="task-logo material-icons md-24 align-self-end">search</div>
+			<input type="text" class="border-0 mr-5" placeholder="Search...">			
+		</div>
+		<div><button type="button" class="btn btn-light mr-3 btn-sm btn-outline-dark">Add Application</button></div>
+	</div>
+	<div class="d-flex" style="border: 1px solid #dddddd; height: 50px;background-color: #f2f3f2; margin: -1px -1px 0px -1px">
+		<div class="col-4 irm-header">Application</div>
+		<div class="col-8 irm-header irm-border-left">Application Owner</div>
+	</div>
+	{% for application in site.data.applications %}
+	<div class="d-flex irm-border-bottom pb-2">
+		<div class="col-4 irm-data">{{ application.name }}</div>
+		<div class="col-8 irm-data">{{ application.owner }}</div>
+	</div>
+	{% endfor %}
+</div>
