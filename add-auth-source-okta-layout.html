@@ -1,0 +1,94 @@
+---
+broadpage: Administration
+specificpage: Add Application
+layout: default
+irmuser: admin
+irmrole: IRM Administrator
+---
+
+<div class="add-app-wrapper">
+	<div>
+		<div class="label-and-input-box">
+			<div>
+				Application Name
+			</div>
+			<div>
+				<input type="text" class="form-control" placeholder="Vendor Management Application">
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div>
+				Description
+			</div>
+			<div>
+				<textarea class="form-control" rows="2">A SAP application to create and update vendors. </textarea>
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div>
+				Application Logo
+			</div>
+			<div class="custom-file">
+			  <input type="file" class="custom-file-input" id="customFile">
+			  <label class="custom-file-label" for="customFile">Choose file</label>
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div>
+				Connector
+			</div>
+			<div>
+				<select class="custom-select">
+				  <option selected>SAP ERP</option>
+				  <option>Oracle EBS</option>
+				  <option>PeopleSoft</option>
+				  <option>SAP HANA</option>
+				</select>				
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div>
+				Hostname
+			</div>
+			<div class="host-port-info">
+				<div>
+					<input type="text" class="form-control" placeholder="qa61combo.irm.greenlight.net">
+				</div>
+				<div class="label-right">
+					Port
+				</div>
+				<div>
+					<input type="text" class="form-control" placeholder="6389">
+				</div>
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div>
+				User ID
+			</div>
+			<div>
+				<input type="text" class="form-control" placeholder="uid=idfSAPAdmin,dc=greenlight,dc=net">
+			</div>
+		</div>
+		<div class="label-and-input-box">
+			<div>
+				Password
+			</div>
+			<div>
+				<input type="password" class="form-control" placeholder="Enter password for the User ID">
+			</div>
+		</div>
+	</div>
+	<div class="prev-next-buttons">
+		<div class="prev-button">
+			<a class="btn btn-secondary btn-sm" href="auth-source-list.html" role="button">
+			  << Back
+			</a>
+		</div>
+		<div class="next-button">
+			<a class="btn btn-secondary btn-sm" href="auth-source-attributes.html" role="button">
+			  Next >>
+			</a>
+		</div>
+	</div>
+</div>

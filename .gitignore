@@ -1,3 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
+_layouts/ebcp-layout.html
+ebcp-logo.png
+user-master-ebcp-layout.html

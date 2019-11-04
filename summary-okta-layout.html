@@ -1,0 +1,92 @@
+---
+broadpage: Administration
+specificpage: Add Application
+layout: default
+irmuser: admin
+irmrole: IRM Administrator
+---
+
+<div class="summary-wrapper">
+	<div class="summary-settings">
+		<div class="summary-header">
+			<h5>Summary</h5>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Application Name</label>
+			</div>
+			<div class="drop-down">
+				<input type="text" class="form-control form-control-sm readonly" placeholder="Active Directory" readonly>
+			</div>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Application Template</label>
+			</div>
+			<div class="drop-down">
+				<input type="text" class="form-control form-control-sm readonly" placeholder="Active Directory" readonly>
+			</div>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Managed Objects</label>
+			</div>
+			<div class="managed-objects-list">
+				<div class="managed-object">
+					Users
+					<!-- <input type="text" class="form-control form-control-sm" placeholder="Users" readonly> -->
+				</div>
+				<div class="managed-object">
+					Groups
+					<!-- <input type="text" class="form-control form-control-sm" placeholder="Groups" readonly> -->
+				</div>
+				<div class="managed-object">
+					Computers
+					<!-- <input type="text" class="form-control form-control-sm" placeholder="Computers" readonly> -->
+				</div>
+				<div class="managed-object">
+					Organization Unit
+					<!-- <input type="text" class="form-control form-control-sm" placeholder="Organization Unit" readonly> -->
+				</div>
+			</div>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Correlation Attribute</label>
+			</div>
+			<div class="drop-down">
+				<input type="text" class="form-control form-control-sm" placeholder="email" readonly>
+			</div>
+		</div>		
+		<div class="label-and-input-box">
+			<div class="change-password-info-banner">
+				<label for="exampleInputEmail1">Manage Password</label>
+			</div>
+			<div class="drop-down">
+			  <input type="text" class="form-control form-control-sm" placeholder="Yes" readonly>
+			</div>
+		</div>	
+		<div class="save-template">
+			<div class="custom-control custom-checkbox center-chk-box">
+			  <input type="checkbox" class="custom-control-input" id="customCheck1">
+			  <label class="custom-control-label" for="customCheck1">Save as Template</label>
+			</div>
+			<div class="template-name">
+			  <input type="text" class="form-control readonly" placeholder="Template Name">
+			</div>
+		</div>
+	</div>
+
+	<div class="prev-next-buttons">
+		<div class="prev-button">
+			<a class="btn btn-secondary btn-sm" href="configure-entitlements-okta-layout.html" role="button">
+			  << Back
+			</a>
+		</div>
+		<div class="next-button">
+			<a class="btn btn-secondary btn-sm" href="applications-list.html" role="button">
+			  Finish
+			</a>
+		</div>
+	</div>
+</div>
