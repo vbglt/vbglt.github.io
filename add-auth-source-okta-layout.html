@@ -4,6 +4,7 @@ specificpage: Add Application
 layout: default
 irmuser: admin
 irmrole: IRM Administrator
+heading: Authoritative Source Configuration
 ---
 
 <div class="add-app-wrapper">
@@ -13,7 +14,7 @@ irmrole: IRM Administrator
 				Application Name
 			</div>
 			<div>
-				<input type="text" class="form-control" placeholder="Vendor Management Application">
+				<input type="text" class="form-control" placeholder="IRM Auth Source">
 			</div>
 		</div>
 		<div class="label-and-input-box">
@@ -21,7 +22,7 @@ irmrole: IRM Administrator
 				Description
 			</div>
 			<div>
-				<textarea class="form-control" rows="2">A SAP application to create and update vendors. </textarea>
+				<textarea class="form-control" rows="2">IRM User Master</textarea>
 			</div>
 		</div>
 		<div class="label-and-input-box">
@@ -39,7 +40,7 @@ irmrole: IRM Administrator
 			</div>
 			<div>
 				<select class="custom-select">
-				  <option selected>SAP ERP</option>
+				  <option selected>LDAP</option>
 				  <option>Oracle EBS</option>
 				  <option>PeopleSoft</option>
 				  <option>SAP HANA</option>
@@ -67,7 +68,7 @@ irmrole: IRM Administrator
 				User ID
 			</div>
 			<div>
-				<input type="text" class="form-control" placeholder="uid=idfSAPAdmin,dc=greenlight,dc=net">
+				<input type="text" class="form-control" placeholder="uid=ADAdmin,dc=greenlight,dc=net">
 			</div>
 		</div>
 		<div class="label-and-input-box">

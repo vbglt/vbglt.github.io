@@ -46,48 +46,9 @@ heading: Entitlements
 			<div class="d-flex irm-border-bottom">
 				<div class="col-4 irm-data">{{ entitlement.application }}</div>
 				<div class="col-4 irm-data">{{ entitlement.type }}</div>
-				<div class="col-4 irm-data" data-toggle="modal" data-target="#permissions"><a href="#">{{ entitlement.value }}</a></div>
+				<div class="col-4 irm-data"><a href="entitlement-details.html">{{ entitlement.value }}</a></div>
 			</div>
-			{% endfor %}			
-  <div class="modal" id="permissions" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-light">
-          <h5 class="modal-title">Entitlement Permissions</h5>
-        </div>
-        <div class="modal-body">
-			<table class="table">
-			  <thead>
-			    <tr>
-			      <th scope="col">Object</th>
-			      <th scope="col">Permission</th>
-			    </tr>
-			  </thead>
-			  <tbody>
-			    <tr>
-			      <td>S_TCODE</td>
-			      <td>TCD:FK01</td>
-			    </tr>
-			    <tr>
-			      <td>F_LFA1_GEN</td>
-			      <td>ACTVT:02</td>
-			    </tr>
-			      <td>F_LFA1_GEN</td>
-			      <td>ACTVT:01</td>
-			    <tr>
-			      <td>F_LFA1_BUK</td>
-			      <td>BUKRS</td>
-			    </tr>
-			  </tbody>
-			</table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>  
-
+			{% endfor %}
 		</div>
 	</div>
 </div>
