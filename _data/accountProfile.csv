@@ -1,0 +1,32 @@
+displayName,id,type
+Username, login, e-mail
+Status,status,String
+Last Name, lastName, String
+Middle name, middleName, String
+Honorific prefix, honorificPrefix, String
+Honorific suffix, honorificSuffix, String
+Primary email,email,e-mail
+Title,title, String
+Display name,displayName, String
+Nickname,nickName, String
+Profile Url,profileUrl, URL
+Secondary email,secondEmail, e-mail
+Mobile phone,mobilePhone, String
+Primary phone,primaryPhone, String
+Street address,streetAddress, String
+City,city, String
+State,state, String
+Zip code,zipCode, Number
+Country code, countryCode, Number
+Postal Address, postalAddress, String
+Preferred language, preferredLanguage, String
+Locale, locale, String
+Time zone, timezone, String
+User type, userType, String
+Employee number, employeeNumber, String
+Cost center, costCenter, Number
+Organization, organization, String
+Division, division, String
+Department, department, String
+ManagerId, managerId, String
+Manager, manager, String

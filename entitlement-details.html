@@ -1,0 +1,40 @@
+---
+broadpage: SOD
+specificpage: Entitlements
+layout: default
+irmuser: John.Doe
+irmrole: Compliance Manager
+icon: assignment
+heading: Entitlement Details
+---
+<div class="d-flex flex-column">
+	<div class="d-flex" style="margin-bottom: 20px">
+		<a class="btn btn-sm btn-outline-secondary" role="button"  data-toggle="modal" data-target="#syncTask">
+		  Export Entitlements
+		</a>
+	</div>
+	<div class="d-flex irm-border" style="background-color: #f2f3f2; margin: -1px -1px -1px -1px">
+		<div class="d-flex irm-border" style="border-radius: 20px; margin: 10px;background-color: white;">
+			<div class="task-logo material-icons md-24 align-self-end">search</div>
+			<input type="text" class="border-0 mr-5" placeholder="Search...">			
+		</div>
+	</div>
+	<div class="d-flex flex-column px-0" style="border: 1px solid #dddddd; margin: 0px -1px -1px -1px">
+		<div class="d-flex" style="border: 1px solid #dddddd; height: 50px;background-color: #f2f3f2; margin: -1px -1px 0px 0px">
+			<div class="col-3 irm-header">Permission Group</div>
+			<div class="col-3 irm-header irm-border-left">Permission</div>
+			<div class="col-2 irm-header irm-border-left">Field</div>
+			<div class="col-2 irm-header irm-border-left">From</div>
+			<div class="col-2 irm-header irm-border-left">To</div>
+		</div>
+		{% for permission in site.data.permissions %}
+		<div class="d-flex irm-border-bottom">
+			<div class="col-3 irm-data">{{ permission.permGrp }}</div>
+			<div class="col-3 irm-data">{{ permission.perm }}</div>
+			<div class="col-2 irm-data">{{ permission.field }}</div>
+			<div class="col-2 irm-data">{{ permission.from }}</div>
+			<div class="col-2 irm-data">{{ permission.to }}</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
